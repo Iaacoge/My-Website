@@ -1,11 +1,11 @@
 <html>
 	<head>
 		<title>Countdown</title>
-		<link rel="icon" href="Ei Side.png">
+		<link rel="icon" href="Venti Side.png">
 	<head>
 <body>
 <div class="container">
-  <h1 id="headline">Countdown to Raiden Shogun:</h1>
+  <h1 id="headline">Countdown to Venti:</h1>
   <div id="countdown">
     <ul>
       <li><span id="days"></span>days</li>
@@ -33,8 +33,8 @@ body {
   @media only screen and (max-width: 1000px) {
   body {
   align-items: center;
-  background-image: url('Ei Sad.png');
-  background-position: right -420 top;
+  background-image: url('Venti.png');
+  background-position: right -510 top 50;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,8 +43,9 @@ body {
 
 body {
   align-items: center;
-  background-image: url('Ei Sad.png');
+  background-image: url('Venti.png');
   background-repeat: no-repeat;
+  background-position: right top -200;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -53,7 +54,7 @@ body {
 }
  
 .container {
-  color: #FFFFFF;
+  color: #000000;
   margin: 0 auto;
   text-align: center;
 }
@@ -109,7 +110,7 @@ li span {
     hour = minute * 60,
     day = hour * 24;
  
-  let birthday = "March 8, 2022 16:00:00",
+  let birthday = "March 29, 2022 20:00:00",
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
@@ -132,7 +133,7 @@ li span {
           countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
  
-        headline.innerText = "She's here!!! Good Luck!!";
+        headline.innerText = "He's here!!! Good Luck!!";
         countdown.style.display = "none";
         content.style.display = "block";
  
