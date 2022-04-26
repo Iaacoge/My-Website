@@ -1,11 +1,11 @@
 <html>
 	<head>
 		<title>Countdown</title>
-		<link rel="icon" href="Venti Side.png">
+		<link rel="icon" href="Yelan Side.png">
 	<head>
 <body>
 <div class="container">
-  <h1 id="headline">Countdown to Venti:</h1>
+  <h1 id="headline">Countdown to Yelan:</h1>
   <div id="countdown">
     <ul>
       <li><span id="days"></span>days</li>
@@ -33,8 +33,8 @@ body {
   @media only screen and (max-width: 1000px) {
   body {
   align-items: center;
-  background-image: url('Venti.png');
-  background-position: right -510 top 50;
+  background-image: url('Yelan.png');
+  background-position: right -850 top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,9 +43,9 @@ body {
 
 body {
   align-items: center;
-  background-image: url('Venti.png');
+  background-image: url('Yelan.png');
   background-repeat: no-repeat;
-  background-position: right top -200;
+  background-position: right top -150;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -110,7 +110,7 @@ li span {
     hour = minute * 60,
     day = hour * 24;
  
-  let birthday = "March 29, 2022 20:00:00",
+  let birthday = "May 11, 2022 19:00:00",
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
