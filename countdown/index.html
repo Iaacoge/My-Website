@@ -8,7 +8,7 @@
 
   <body>
     <div class="container">
-      <h1 id="headline">Countdown to Alhaitham:</h1>
+      <h1 id="headline">Countdown to Shenhe:</h1>
       <div id="countdown">
         <ul>
           <li><span id="days"></span>days</li>
@@ -35,7 +35,7 @@
 
     body {
       align-items: center;
-      background-image: url('Alhaitham.jpg');
+      background-image: url('Shenhe.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
@@ -45,10 +45,10 @@
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
 
-    @media only screen and (max-width: 1421px) {
+    @media only screen and (min-height: 1200px) {
       body {
         align-items: center;
-        background-image: url('AlhaithamPhone.jpg');
+        background-image: url('ShenhePhone.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -112,7 +112,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-      let birthday = "January 17, 2023 19:00:00",
+      let birthday = "March 21, 2023 16:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
           let now = new Date().getTime(),
