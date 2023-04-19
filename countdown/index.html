@@ -2,13 +2,13 @@
 
 <head>
   <title>Countdown</title>
-  <link rel="icon" href="ShenheSide.png">
+  <link rel="icon" href="EulaSide.png">
 
   <head>
 
   <body>
     <div class="container">
-      <h1 id="headline">Countdown to Shenhe:</h1>
+      <h1 id="headline">Countdown to Eula:</h1>
       <div id="countdown">
         <ul>
           <li><span id="days"></span>days</li>
@@ -35,7 +35,7 @@
 
     body {
       align-items: center;
-      background-image: url('Shenhe.jpg');
+      background-image: url('Eula.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
@@ -48,8 +48,8 @@
     @media only screen and (min-height: 1200px) {
       body {
         align-items: center;
-        background-image: url('ShenhePhone.jpg');
-        background-position: center;
+        background-image: url('Eula.jpg');
+        background-position: -750;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -112,7 +112,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-      let birthday = "March 21, 2023 16:00:00",
+      let birthday = "May 23, 2023 20:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
           let now = new Date().getTime(),
