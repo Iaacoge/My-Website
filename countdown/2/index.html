@@ -147,7 +147,22 @@
           //seconds
         }, 0);
     })();
-
+    function changeBackground() {
+      const backgrounds = ["Xianyun.jpg", "Xianyun1.jpg", "Xianyun2.jpg"];
+      const randomBackground = backgrounds[Math.floor(backgrounds.length * Math.random())];
+      document.body.style.backgroundImage = `url(${randomBackground})`;
+      if (document.body.style.backgroundImage === `url("Xianyun2.jpg")`) {
+        document.body.style.left = `-400`;
+      }
+      else if (document.body.style.backgroundImage === `url("Xianyun1.jpg")`) {
+        document.body.style.left = `-340`;
+      }
+    };
+    changeBackground();
+    if (window.screen.width < 1200) {
+      document.body.style.backgroundImage = `url(Xianyunphone.jpg)`;
+      document.querySelector(".container").style.color = `white`
+    }
   </script>
 
 </html>
